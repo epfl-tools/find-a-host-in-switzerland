@@ -10,8 +10,7 @@ module.exports.db = new db();
 
 const fetch = require('node-fetch');
 
-new CronJob('0 */5 * * * *', () => {
-
+const sync = () => {
     hosts.forEach(async hostName => {
 
         console.log(`[${new Date().toLocaleString()}] Checking ${hostName}...`);
@@ -54,5 +53,12 @@ new CronJob('0 */5 * * * *', () => {
             }
         }
     });
+}
+
+new CronJob('0 */5 * * * *', () => {
+
+    sync();
 
 }, null, true, 'Europe/Zurich');
+
+sync();
