@@ -1,0 +1,15 @@
+{
+  "name": "find-a-host-in-switzerland",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Androz2091/find-a-host-in-switzerland.git",
+  "author": "Androz2091 <androz2091@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cron": "^2.3.0",
+    "dotenv": "^16.0.3",
+    "easy-json-database": "^1.5.0",
+    "jsdom": "^21.1.1",
+    "node-fetch": "2.6.6"
+  }
+}
